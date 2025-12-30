@@ -12,6 +12,8 @@ function CreateRecurringTaskForm(props: { onCreate: (todo: Task) => void }) {
       description: values.description,
       dueDate: values.dueDate,
       completedAt: null,
+      createdAt: new Date(),
+      expiresAt: null,
     });
 
     pop();
